@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up for Facebook</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 400;
+      padding: 2em 0 11em;
+      letter-spacing: 0.015em;
+    }
+
+    #wrapper {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .intro {
+      margin-bottom: 5rem;
+      font-size: 1.4em;
+      color: #767676;
+      font-weight: 300;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 3em;
+      line-height: 1.25;
+      letter-spacing: 0.0125em;
+      color: #3b5998;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.25em;
+      font-size: 1.25;
+      font-weight: 600;
+      letter-spacing: 0.033em;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      list-style-type: none;
+      padding: .4em 160px .4em 0;
+    }
+
+    li:after,
+    li:first-child:before {
+      position: absolute;
+      display: block;
+      font-size: .5em;
+      color: #aaa;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      content: "........................................................................................................................................................................................................................................................................................................"
+    }
+
+    li:before {
+      top: -1em;
+    }
+
+    li:after {
+      bottom: -.45em;
+    }
+
+    li button {
+      position: absolute;
+      top: .5em;
+      right: 0;
+      background: #fff;
+      color: #767676;
+      border: none;
+      border-radius: 3px;
+      font-size: .8em;
+      padding: .4em .5em;
+      float: right;
+      font-weight: 500;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .1);
+    }
+
+    li button.accepted {
+      background: #289c20;
+      color: white;
+    }
+
+    li p {
+      margin: 0 0 1rem;
+    }
+
+    li a {
+      text-decoration: none;
+      margin-left: .3em;
+      font-size: .7em;
+      color: #3b5998;
+    }
+
+    li a:visited {
+      color: #580258;
+    }
+
+    #signup {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      padding: 2em;
+      text-align: center;
+      box-shadow: 0 -2px 15px rgba(0, 0, 0, .1), 0 -1px 1px rgba(0, 0, 0, .1);
+    }
+
+    #signup .progress-bar {
+      width: 0;
+      height: 3px;
+      position: absolute;
+      top: -3px;
+      left: 0;
+      transition: all .5s ease-in-out;
+      background: #289c20;
+      box-shadow: 0 0 5px #289c20;
+    }
+
+    #signup .button {
+      display: inline-block;
+      padding: .7em 1.5em .8em;
+      min-width: 200px;
+      max-width: 500px;
+      border-radius: 2px;
+      background: #3b5998;
+      color: white;
+      text-decoration: none;
+      transition: all .25s linear;
+    }
+
+    #signup .button-active {
+      background: #3b5998;
+    }
+
+    @media screen and (max-width: 800px) {
+      body {
+        font-size: 16px;
+        padding: .75em .75em 9em;
+      }
+      li {
+        padding-right: 120px;
+      }
+      #wrapper,
+      li:after,
+      li:first-child:before {}
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Sign up for Facebook</h1>
+
+    <p class="intro">Facebook can be fun and useful. Before you sign up, make sure you are okay with how they use your data.</p>
+
+    <h2>Facebook will attempt to</h2>
+    <ul>
+      <li>Track your location
+        <a class="source" href="#">Source</a>
+      </li>
+      <li>Track your phone calls and texts (who you talk to and when)
+        <a class="source" href="https://newsroom.fb.com/news/2018/03/fact-check-your-call-and-sms-history/">Source</a>
+      </li>
+      <li>Track much of what you do on the internet
+        <a class="source" href="https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit">Source</a>
+      </li>
+      <li>Log most of what you do on Facebook
+        <a class="source" href="https://www.facebook.com/about/privacy/update#what-kinds-of-information-do-we-collect">Source</a>
+      </li>
+    </ul>
+
+    <h2>With this data, Facebook can likely</h2>
+    <ul>
+      <li>Guess where you live, work and spend your time</li>
+      <li>Guess who your friends and family are</li>
+      <li>Guess who you live with and meet with in real life</li>
+      <li>Guess your political affiliations
+        <a class="source" href="https://www.nytimes.com/2016/08/24/us/politics/facebook-ads-politics.html">Source</a>
+      </li>
+      <li>Guess your sexual orientation
+        <a class="source" href="https://www.newscientist.com/article/2161442-facebook-may-guess-millions-of-peoples-sexuality-to-sell-ads/">Source</a>
+      </li>
+      <li>Guess what times you work and sleep</li>
+      <li>Understand exactly what you're interested in</li>
+      <li>Estimate what your financial situation is like</li>
+    </ul>
+
+    <h2>You should know that</h2>
+    <ul>
+      <li>
+        <p>Facebook's founder once called people “dumb fucks” for trusting Facebook with their personal information.
+          <a class="source" href="https://en.wikiquote.org/wiki/Mark_Zuckerberg">Source</a>
+        </p>
+      </li>
+      <li>
+        <p>Facebook makes money by giving companies, organizations and foreign powers the ability to show you ads based on what
+          they know about you. These ads may try to change your opinion or make you buy something.</p>
+      </li>
+      <li>
+        <p>Facebook uses design tricks to make you give up more personal information that you may have intented do.</p>
+      </li>
+      <li>
+        <p>Facebook will run experiments on you to make you use Facebook more.</p>
+      </li>
+    </ul>
+
+    <div id="signup">
+      <div class="progress-bar"></div>
+      <a class="button" href="#">Sign up for Facebook</a>
+    </div>
+
+  </div>
+
+  <script>
+    var listItems = document.querySelectorAll('li');
+    var progressBar = document.querySelector('.progress-bar');
+    var signUpButton = document.querySelector('#signup .button');
+
+    function updateProgress() {
+      var acceptedItemsCount = document.querySelectorAll('li button.accepted').length;
+      var progress = acceptedItemsCount / listItems.length * 100;
+      progressBar.style.width = progress + "%";
+      if (progress > 80) {
+        signUpButton.className = "button button-active";
+      } else {
+        signUpButton.className = "button";
+      }
+    }
+
+    [].forEach.call(listItems, function (item) {
+      var button = document.createElement('button');
+      button.innerHTML = "I'm OK with this";
+      button.onclick = function () {
+        button.className = button.className === 'accepted' ? button.className = '' : button.className = 'accepted';
+        updateProgress();
+      }
+      item.appendChild(button);
+    });
+  </script>
+
+</body>
+
+</html>
