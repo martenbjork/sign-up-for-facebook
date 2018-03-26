@@ -4,7 +4,7 @@
 
 ## Background
 
-I really like Facebook. I use it every day and choose to store lots of personal information on their servers. This is not anti-Facebook web site, it's just an informative web site about what data they store and what a tech company like Facebook can infer from that data.
+I really like Facebook. I use it every day and choose to store lots of personal information on their servers. This is not anti-Facebook project — it's just an informative web site about what data they store and what a tech company like Facebook can infer from that data.
 
 ## Help out!
 
