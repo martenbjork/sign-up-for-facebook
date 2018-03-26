@@ -1,0 +1,24 @@
+{
+  "name": "sign-up-for-facebook",
+  "version": "1.0.0",
+  "description":
+    "A summary of what data Facebook collects and how it can be used",
+  "main": "index.js",
+  "scripts": {
+    "web": "http-server ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martenbjork/sign-up-for-facebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martenbjork/sign-up-for-facebook/issues"
+  },
+  "homepage": "https://github.com/martenbjork/sign-up-for-facebook#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
