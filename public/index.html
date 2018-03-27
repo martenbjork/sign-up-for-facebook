@@ -514,17 +514,25 @@
       progressBar.style.width = progress + "%";
       if (progress > 80) {
         signUpButton.className = "button button-active";
+        signUpButton.onclick = function (evt) {
+          return true;
+        };
       } else {
         signUpButton.className = "button";
+        signUpButton.onclick = function (evt) {
+          evt.preventDefault();
+          return false;
+        };
       }
     }
+    updateProgress();
 
     // Add “I'm OK with this” buttons
     [].forEach.call(listItems, function (item) {
       var button = document.createElement('button');
       button.className = "accept";
       button.innerHTML = "I'm OK with this";
-      button.onclick = function () {
+      button.onclick = function (evt) {
         button.className = button.className === 'accept accepted' ? button.className = 'accept' : button.className = 'accept accepted';
         updateProgress();
       }
